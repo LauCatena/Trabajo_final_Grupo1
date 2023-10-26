@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<header><title>Tiro con arco</title>
+<body>
+    <header><title>Tiro con arco</title>
     <h1>Tiro con arco</h1>
     <img src="./Assets/Archery-bro 1.png">
-</header>
-<body>
-    <body>
+    </header>
         <main>
             <!--Seccion de Presentación-->
             <section class="contenedor" id="Presentación">
-                
             <!--Seccion de Un recorrido por la historia-->
             <section class="contenedor" id="Un recorrido por la historia">
                 <article>
@@ -22,7 +20,6 @@
                 <img src="./Assets/Un recorrido por .png" alt="Imagen de una persona con arco y flecha">
                 <p>Cuando pensamos en arco y fleqha quizá se nos vengan a la mente imágenes sobre las primeras personas o armas que tuvieron su apogeo desde la prehistoria hasta la Edad Media, pasando por la Antigüedad. Sin embargo, es más que eso. </p>
             </article>
-    
             <!--Seccion ¿Cómo empezar?-->
             <section class="contenedor" id="¿Cómo empezar?">
                 <article>
@@ -31,7 +28,6 @@
                 <p>Si hablamos del deporte de Arquería, seguramente te preguntaste cómo empezamos. Bueno, acá te contamos qué necesitás y las diferentes modalidades que tenés</p>
                 </article>
             </section>
-    
             <!--Seccion curiosidades-->
             <section class="contenedor" id="curiosidades">
                 <article>
@@ -40,32 +36,33 @@
                     <p>Llegados a este punto, seguramente pensaste en el deporte en sí. Bueno, acá te vamos a contar sobre las distintas competencias y modalidades que tenés. Incluso si no querés competir, cómo podés realizar el deporte.</p>
                     </article>
             </section>
-    
             <!--Seccion formulario-->
             <section class="contenedor" id="Formulario">
-                <div class="s1-11 s1-13 montserrat-semi-bold-blue-whale-18px">contacto</div>
-                <p class="s1-11 s1-13 montserrat-normal-blue-whale-12px">¿tenés consultas? queremos conocer tu opinión y responder tus dudas</p>
-                <div class="group">
-                    <div class="nombre-y-apellido montserrat-normal-nobel-12px">Nombre y apellido</div>
-                </div>
-            </div>
-            <div class="group">
-                <div class="overlap-group1">
-                    <div class="e-mail montserrat-normal-nobel-12px">E-mail</div>
-            </div>
-            <div class="group-3">
-                <div class="tu-mensaje montserrat-normal-nobel-12px">Tu mensaje</div>
-                </div>
-            </div>
+                <table>
+                    <thead>
+                        <tbody>
+                        <tr>
+                            <th>Nombre y apellido</th>
+                            <th>e-mail</th>
+                            <th>tu mensaje</th>
+                        </tr>
+                    </tbody>
+                        <th id="Nombre y apellido"></th>
+                        <th id="e-mail"></th>
+                        <th id="tu mensaje"></th>
+                        </thead>
+                </table>
+                <button id="guardar" onclick="guardar()">Guardar</button>
+                    <!--acá irían los íconos y el derecho de autor-->
+                    <footer>
+                        <p><h6>Todos los derechos reservados</h6></p>
+                    </footer>        
         </main>
-    </body>
-
-    <script src= "./main.js"></script>
-</body>
-
     <!--acá irían los íconos y el derecho de autor-->
     <footer>
         <p><h6>Todos los derechos reservados</h6></p>
     </footer>
+    <script src= "./main.js"></script> 
+</body>
 </html>
 
