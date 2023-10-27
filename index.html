@@ -4,69 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Tiro con arco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Tiro con arco</h1>
-        <img src="./Assets/Archery-bro 1.png">
+    <header class="header"><title class="tiro">Tiro con arco</title>
+        <div class="TiroConArco" style="width: 100%; height: 100%"><span style="color: white; font-size: 20px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">TIRO CON </span><span style="color: #FFDD55; font-size: 20px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">ARCO</span></div>
+    <img src="./Assets/Archery-bro 1.png">
     </header>
-    <main>
-        <!--Seccion de Presentación-->
-        <!-- Donde deberia cerrar? -->
-        <section class="contenedor" id="Presentación">
-        <!--Seccion de Un recorrido por la historia-->
-        <section class="contenedor" id="Un recorrido por la historia">
-            <article>
-                <h2><strong>Un recorrido por la historia</strong></h2>
-                <img src="./Assets/Un recorrido por .png" alt="Imagen de una persona con arco y flecha">
-                <p>Cuando pensamos en arco y fleqha quizá se nos vengan a la mente imágenes sobre las primeras personas o armas que tuvieron su apogeo desde la prehistoria hasta la Edad Media, pasando por la Antigüedad. Sin embargo, es más que eso. </p>
-            </article>
-        </section>
-        <!--Seccion ¿Cómo empezar?-->
-        <section class="contenedor" id="¿Cómo empezar?">
-            <article>
-                <h2><strong>¿Cómo empezar?</strong></h2>
-                <img src="./Assets/image 8.png" alt="Imagen de una persona de espalda con arco y flecha modernos apuntando">
-                <p>Si hablamos del deporte de Arquería, seguramente te preguntaste cómo empezamos. Bueno, acá te contamos qué necesitás y las diferentes modalidades que tenés</p>
-            </article>
-        </section>
-        <!--Seccion curiosidades-->
-        <section class="contenedor" id="curiosidades">
-            <article>
-                <h2><strong>Curiosidades</strong></h2>
-                <img src="./Assets/Mujer arco .png" alt="Imagen de una mujer con el arco y flecha apuntando hacia la pantalla">
-                <p>Llegados a este punto, seguramente pensaste en el deporte en sí. Bueno, acá te vamos a contar sobre las distintas competencias y modalidades que tenés. Incluso si no querés competir, cómo podés realizar el deporte.</p>
-            </article>
-        </section>
-        <!--Seccion formulario-->
-        <section class="contenedor" id="Formulario">
-            <table>
-                <thead>
-                    <th id="Nombre y apellido"></th>
-                    <th id="e-mail"></th>
-                    <thead id="tu mensaje"></th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Nombre y apellido</th>
-                        <th>e-mail</th>
-                        <th>tu mensaje</th>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- Agregar formulario -->
-            <!-- Dentro poner el button de guardar -->
-            <button id="guardar" onclick="guardar()">Guardar</button>
-                <!--acá irían los íconos y el derecho de autor-->
-                <footer>
-                    <p><h6>Todos los derechos reservados</h6></p>
-                </footer>
-        </section>        
-    </main>
+        <main>
+            <!--Seccion de Presentación-->
+            <section class="contenedor" id="Presentación">
+                <p><h4>El deporte de la arquería...</h4></p>
+            </section>
+            <!--Seccion de Un recorrido por la historia-->
+            <section class="contenedor" id="S1">
+                <div class="card" style="width: 18rem;">
+                    <img src="./Assets/Un recorrido por .png" class="card-img-top" alt="Imagen de una persona con arco y flecha">
+                    <div class="card-body">
+                      <h5 class="card-title">Un recorrido por la historia</h5>
+                      <p class="card-text">Cuando pensamos en arco y fleqha quizá se nos vengan a la mente imágenes sobre las primeras personas o armas que tuvieron su apogeo desde la prehistoria hasta la Edad Media, pasando por la Antigüedad. Sin embargo, es más que eso.</p>
+                      <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                  </div>
+            </section>
+            <!--Seccion ¿Cómo empezar?-->
+            <section class="contenedor" id="S2">
+                <article>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./Assets/Card 2.png" class="card-img-top" alt="Imagen de una persona de espalda con arco y flecha modernos apuntando">
+                        <div class="card-body">
+                          <h5 class="card-title">¿Cómo empezar?</h5>
+                          <p class="card-text">Si hablamos del deporte de Arquería, seguramente te preguntaste cómo empezamos. Bueno, acá te contamos qué necesitás y las diferentes modalidades que tenés</p>
+                          <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                      </div>
+                </article>
+            </section>
+            <!--Seccion curiosidades-->
+            <section class="contenedor" id="S3">
+                <article>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./Assets/Mujer arco .png" class="card-img-top" alt="Imagen de una mujer con el arco y flecha apuntando hacia la pantalla">
+                        <div class="card-body">
+                          <h5 class="card-title">Curiosidades</h5>
+                          <p class="card-text">Llegados a este punto, seguramente pensaste en el deporte en sí. Bueno, acá te vamos a contar sobre las distintas competencias y modalidades que tenés. Incluso si no querés competir, cómo podés realizar el deporte.</p>
+                          <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                      </div>
+                    </article>
+            </section>
+            <!--Seccion formulario-->
+            <section class="contenedor" id="Formulario">
+                <input id="nombreyapellidoIngresado" type="text" placeholder="Nombre y apellido">
+                <input id="e-mailingresado" type="text" placeholder="e-mail">
+                <input id="tumensaje" type="text" placeholder="Tu mensaje">
+                <table>
+                    <thead>
+                        <tbody>
+                        <tr>
+                            <th>Nombre y apellido</th>
+                            <th>e-mail</th>
+                            <th>tu mensaje</th>
+                        </tr>
+                    </tbody>
+                        <th id="Nombre y apellido"></th>
+                        <th id="e-mail"></th>
+                        <th id="tu mensaje"></th>
+                        </thead>
+                </table>
+                <button id="guardar" onclick="guardar()">Guardar</button>
+                </section>
+           <!--Seccion mapa-->
+                <section class="mapa" id="mapa">
+                <h6>Elegí tu club más cercano</h6>
+                <a href="https://www.google.com/maps/d/u/0/viewer?mid=1kGox-ru28PASws2cP8_ntxT5jeuNn0E&ll=-35.598529022027606%2C-59.2368005092991&z=5" target="_blank">Mapa</a>
+            </section>        
+        </main>
     <!--acá irían los íconos y el derecho de autor-->
     <footer>
-        <p><h6>Todos los derechos reservados</h6></p>
+        <h6>Todos los derechos reservados</h6>
     </footer>
     <script src= "./main.js"></script> 
 </body>
