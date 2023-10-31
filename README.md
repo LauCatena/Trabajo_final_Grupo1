@@ -1,2 +1,2 @@
 # Trabajo_final_Grupo1
-Añadí algo de javaS, sin éxito 
+Le cambié los enlaces para que funcione

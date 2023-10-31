@@ -8,5 +8,17 @@ function guardar() {
     document.getElementById("e-mail").innerHTML = apellido ;
     document.getElementById("Tu mensaje").innerHTML = sexo ;
 
-    console.log(formulario) ;
 }
+console.log(formulario) ;
+//esta funcion es para cuando quede organizado lo de las cartas//
+(function(){
+    let card = document.querySelectorAll('.card-content');
+    for(let i = 0; i < card.length; i++){
+      card[i].addEventListener('mouseleave', function(event) {
+        let target = event.target;
+        if(target.scrollTop) {
+          target.scrollTop = 0;
+        }
+      });
+    };
+  })();
