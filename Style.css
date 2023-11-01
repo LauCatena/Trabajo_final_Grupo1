@@ -1,6 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
 .main {
     color: #F5F5F5;
-    padding: 30px;
+    margin: 30px;
+    padding-right: 0px;
+    justify-content: center;
+  }
+
+.header {
+    background-color: #0054A4;
+
+    .titulo1 {
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+    .titulo2 {
+    color: #FFDD55;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+}
+.intro {
+    color: black;
+}
+.card-body {
+    height: auto;
+    max-height: 200px; /* Altura máxima para el cuerpo de la tarjeta */
+    overflow: hidden; /* Ocultar el exceso de texto */   
+  }
+
+.card {
+    width: 18rem;
+    /* Agrega estilos para la tarjeta */
+  }
+  
+.btn {
+    display: none; /* Ocultar el botón "Leer más" por defecto */
+  }
+  
+.expandida .card-body {
+    max-height: none; /* Al expandir, mostrar todo el texto */
+  }
+
+.card {    
+    .card-title{
+        color: white;
+    }
+    .card-text{
+        color: white;
+    }
+    flex-direction: column;
+    margin: 10px;
+    width: 200px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0054A4;
+  }
+
+.boton {
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #FFC425;
   }
 
