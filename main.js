@@ -24,7 +24,7 @@ console.log(formulario) ;
 //   })();
 
 
-    // Obtener el botón "Leer más" y la tarjeta
+   /* // Boton "Leer más" y la tarjeta
     const botonLeerMas = document.querySelector('boton1');
     const tarjeta = document.getElementById('card1');
   
@@ -32,4 +32,16 @@ console.log(formulario) ;
     botonLeerMas.addEventListener('click', function() {
       // Agregar o quitar una clase para expandir o contraer la tarjeta
       tarjeta.idList.toggle('card1');
-    });
+    });*/
+
+
+    function expandirTarjeta() {
+      var tarjeta = document.getElementById("card1");
+  
+      if (tarjeta.style.height === "100px" || tarjeta.style.height === "") {
+          tarjeta.style.height = "auto"; // Expandir la tarjeta
+      } else {
+          tarjeta.style.height = "100px"; // Contraer la tarjeta a la altura inicial
+      }
+  }
+  
