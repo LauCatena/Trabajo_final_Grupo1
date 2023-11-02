@@ -4,9 +4,9 @@ function guardar() {
     let email = document.getElementById("emailIngresado").value ;
     let tumensaje = document.getElementById("tumensajeIngresado").value ;
 
-    document.getElementById("nombre y apellido").innerHTML = nombre ;
-    document.getElementById("e-mail").innerHTML = apellido ;
-    document.getElementById("Tu mensaje").innerHTML = sexo ;
+    document.getElementById("nombre y apellido").innerHTML = nombreyapellido ;
+    document.getElementById("e-mail").innerHTML = email ;
+    document.getElementById("Tu mensaje").innerHTML = tumensaje ;
 
 }
 console.log(formulario) ;
