@@ -35,13 +35,15 @@ console.log(formulario) ;
     });*/
 
 
-    function expandirTarjeta() {
-      var tarjeta = document.getElementById("card1");
-  
-      if (tarjeta.style.height === "100px" || tarjeta.style.height === "") {
-          tarjeta.style.height = "auto"; // Expandir la tarjeta
-      } else {
-          tarjeta.style.height = "100px"; // Contraer la tarjeta a la altura inicial
-      }
-  }
+
+let mostrando = false;
+function mostrar() {
+    let div = document.getElementById('verMas');
+    if(mostrando){
+        div.style.display = "none";
+    } else{
+        div.style.display = "block";
+    }
+    mostrando = !mostrando;
+}
   

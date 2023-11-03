@@ -11,14 +11,32 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
+}
+.main .intro{
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  .p{
+    font-size: 24px;
+    @media (max-width: 500px){
+      font-size: 20px;
+    }
+  }
 }
 
-.main {
-    color: #F5F5F5;
-    margin: 30px;
-    padding-right: 0px;
+.main .contenedor{
+    color: #F5F5F5;    
+    max-width: inherit;
+    display: flex;
+    flex-direction: row;  
+    @media (max-width: 500px){
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    }
   }
 
 .header {
@@ -40,36 +58,25 @@ body{
     word-wrap: break-word;
   }
 
-.intro {
-    color: black;
-}
-
-.container{
+/* .container{
   width: 1000px;
   display: flex;
   justify-content: space-between;
   position: relative;
-   
-}
+} */
 .card-body {
     z-index: 1;
     height: auto;
-    max-height: 200px; 
-    overflow: hidden;  
+    /* max-height: 200px; */
+    /* overflow: hidden;   */
 }
-
-
   
-.btn {
+/* .btn {
     display: none; 
-  }
+  } */
   
-.expandida .card-body {
-    max-height: none; /*no encontre a que corresponde .expandida */
-  }
-
-
 .card{
+  display:flex;
   flex-direction: column;
   margin: 10px;
   width: 200px;
@@ -77,9 +84,8 @@ body{
   align-items: center;
   justify-content: center;
   background-color: #0054A4;
-  height: 300px; 
-  overflow: hidden; 
-  transition: height 0.3s ease; 
+  /* height: 300px;  */
+  overflow: hidden;  
 }
 
 .card .card-title {
@@ -92,7 +98,7 @@ body{
 }
 
 
-.boton {
+.btn {
     height: 50px;
     width: 100px;
     justify-content: center;
@@ -102,3 +108,7 @@ body{
     cursor:pointer ;
   }
 
+
+  #verMas {
+    display: none;
+  }
