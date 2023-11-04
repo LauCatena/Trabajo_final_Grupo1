@@ -18,25 +18,24 @@ body{
   align-items: center;
   justify-content: center;
   color: black;
-  .p{
-    font-size: 24px;
-    @media (max-width: 500px){
-      font-size: 20px;
-    }
+}
+@media (max-width: 500px){
+  .main .intro .p{
+    font-size: 20px;
   }
 }
-
+@media (max-width: 500px){
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
 .main .contenedor{
-    color: #F5F5F5;    
+    color: #000000;    
     max-width: inherit;
     display: flex;
-    flex-direction: row;  
-    @media (max-width: 500px){
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
+    flex-direction: row; 
   }
 
 .header {
@@ -45,7 +44,7 @@ body{
 .titulo1 {
     color: white;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     word-wrap: break-word;
   }/*esto lo separe porque uno no corria ok*/
@@ -53,9 +52,14 @@ body{
 .titulo2 {
     color: #FFDD55;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     word-wrap: break-word;
+  }
+
+  .contenedorflex {
+    display: flex;
+    flex-wrap: wrap;
   }
 
 /* .container{
