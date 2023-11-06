@@ -7,9 +7,6 @@
 }
 body{
   background-color: #F5F5F5;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   overflow: scroll;
 }
@@ -24,6 +21,11 @@ body{
     font-size: 20px;
   }
 }
+
+.TiroConArco {
+  font-size: 78px;
+}
+
 /* @media (max-width: 500px){
   
   display: flex;
@@ -36,7 +38,9 @@ body{
     color: #000000;    
     max-width: inherit;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    margin-top: 20px; 
+    margin-bottom: 20px;
   }
 
 .header {
@@ -131,35 +135,75 @@ body{
     display: none;
   }
 
- #Formulario{
+  /* SECCION FORMULARIO */
+
+ #Formulario {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ #Formulario .h2form {
+  display: flex;
+  justify-content: center;
  }
  
- #form1{
+ #form1 {
   display: flex;
   flex-direction: column;
   align-items: center;
  }
 
- #form1 > input{
+ #form1 > input {
   border-radius: 4px;
   padding: 3px;
   margin-bottom: 8px;
+  width: 400px;
  }
 
+ #form1 #tumensaje {
+  height: 100px;
+ }
 
- .TiroConArco {
-  font-size: 78px;
+/*SECTION MAPA*/
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  background-color: #0054A4;
+  max-width: 850px;
+  border-radius: 6px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
 }
+ .mapa .card-title {
+  color: #F5F5F5;
+  margin: 10px;
+ }
+
+.iframe {
+  height: 600px;
+  width: 800px;
+  margin: 10px;
+}
+
 
 /* SECTION FOOTER */
 
 footer {
   background-color: #0054A4;
   color: white;
-  height: 30px;
   text-align: center;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .redes {
+  scale: 40%;  
 }

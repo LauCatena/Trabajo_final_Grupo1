@@ -19,7 +19,7 @@
         <main class="main">
             <!--Seccion de Presentación-->
             <section class="intro" id="Introduccion">
-                <h1>El deporte</h1>
+                <h2>El deporte</h2>
                 <p class="p">El Tiro con arco es la práctica de usar un arco para disparar flechas. Inventado hace muchos años como instrumento de cacería y luego para la guerra, actualmente se utiliza como deporte competitivo y recreacional, que, al ser de precisión, confluye tanto el control de la mente como del cuerpo para lograr dar en el centro del blanco.</p>
             </section>
           <section class="contenedorflex">
@@ -60,7 +60,7 @@
                             </p>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-primary" onclick="mostrar2()">Leer más</a>
+                        <a href="#S2" class="btn btn-primary" onclick="mostrar2()">Leer más</a>
                       </div>
                 
                     </article>
@@ -80,27 +80,28 @@
                             </p>
                           </div>
                         </div>
-                        <a href="#" class="btn btn-primary" onclick="mostrar3()">Leer más</a>
+                        <a href="#S3" class="btn btn-primary" onclick="mostrar3()">Leer más</a>
                       </div>
         
                     </article>
           </section>
             <!--Seccion formulario-->
             <section class="contenedor" id="Formulario">
+              <h2 class="h2form">Contacto</h2>
               <form id="form1">
                 <input id="nombreyapellidoIngresado" type="text" placeholder="Nombre y apellido">
                 <input id="emailingresado" type="text" placeholder="Email">
                 <input id="tumensaje" type="text" placeholder="Tu mensaje">
-                <button id="guardar" class="btn" onclick="guardar()">Guardar</button>
+                <button href="#guardar" id="guardar" class="btn" onclick="guardar()">Guardar</button>
               </form>
                 <table>
                     <thead>
                         <tbody>
-                        <tr>
+                        <!-- <tr>
                             <th>Nombre y apellido</th>
                             <th>Email</th>
                             <th>Tu mensaje</th>
-                        </tr>
+                        </tr> -->
                     </tbody>
                         <th id="Nombre y apellido"></th>
                         <th id="email"></th>
@@ -110,14 +111,15 @@
                 </section>
            <!--Seccion mapa-->
                 <section class="mapa" id="mapa">
-                <h3>Elegí tu club más cercano</h3>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1kGox-ru28PASws2cP8_ntxT5jeuNn0E&ehbc=2E312F" width="640" height="480"></iframe>
+                <h2 class="card-title">Elegí tu club más cercano</h2>
+                <iframe class="iframe" src="https://www.google.com/maps/d/embed?mid=1kGox-ru28PASws2cP8_ntxT5jeuNn0E&ehbc=2E312F"></iframe>
                 <!-- <a href="https://www.google.com/maps/d/u/0/viewer?mid=1kGox-ru28PASws2cP8_ntxT5jeuNn0E&ll=-35.598529022027606%2C-59.2368005092991&z=5" target="_blank">Mapa</a> -->
             </section>        
         </main>
     <!--acá irían los íconos y el derecho de autor-->
     <footer>
         <span>Todos los derechos reservados</span>
+        <img class="redes" src="./Assets/redes.png" alt="instagram">
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src= "./main.js"></script> 
