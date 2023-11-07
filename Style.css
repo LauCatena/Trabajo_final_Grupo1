@@ -50,10 +50,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    height: 100vh;
+    height: 75vh;
+    padding: 20px;
   }
 
-
+  .imgppal {
+    scale: 80%;
+  }
 
 .titulo1 {
     color: white;
@@ -122,11 +125,12 @@ body{
 .btn {
     height: 50px;
     width: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     background-color: #FFC425;
-    cursor:pointer ;
+    cursor: pointer;
     color: white;
   }
 
