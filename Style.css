@@ -22,17 +22,11 @@ body{
   }
 }
 
+/* SECCION HEADER*/
+
 .TiroConArco {
   font-size: 78px;
 }
-
-/* @media (max-width: 500px){
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  } */
 
 .main .contenedor{
     color: #000000;    
@@ -58,13 +52,14 @@ body{
     scale: 80%;
   }
 
+
 .titulo1 {
     color: white;
     font-size: 78px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     word-wrap: break-word;
-  }/*esto lo separe porque uno no corria ok*/
+  }
   
 .titulo2 {
     color: #FFDD55;
@@ -73,42 +68,60 @@ body{
     font-weight: 700;
     word-wrap: break-word;
   }
+@media (max-width: 850px){
+  .imgppal{
+    display: none;
+  }
+}
 
-  .contenedorflex {
+/* SECCION CARDS */
+
+.contenedorflex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   
   }
 
-/* .container{
-  width: 1000px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-} */
 .card-body {
     z-index: 1;
     height: auto;
-    /* max-height: 200px; */
-    /* overflow: hidden;   */
 }
+
   
-/* .btn {
-    display: none; 
-  } */
-  
-.card{
+#card1{
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 10px;
-  width: 200px;
   padding: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #0054A4;
-  /* height: 300px;  */
+  overflow: hidden;  
+}
+
+#card2{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px; 
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #0054A4;
+  overflow: hidden;  
+}
+
+#card3{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #0054A4;
   overflow: hidden;  
 }
 
@@ -181,12 +194,15 @@ body{
   background-color: #0054A4;
   max-width: 850px;
   border-radius: 6px;
-  /* margin-left: 50px;
-  margin-right: 50px; */
 }
  .mapa .card-title {
   color: #F5F5F5;
   margin: 10px;
+ }
+ 
+ .link{
+  display: none;
+  color: #F5F5F5;
  }
 
 .iframe {
@@ -195,6 +211,17 @@ body{
   margin: 10px;
 }
 
+@media (max-width: 850px){ 
+  .link{
+    display: block;
+    color: #F5F5F5;
+    font-size: 20px;
+  }
+  .iframe{
+    display: none;
+  }
+
+}
 
 /* SECTION FOOTER */
 
