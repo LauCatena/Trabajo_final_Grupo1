@@ -80,16 +80,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;  
-  }
+      }
 
 .card-body {
-    z-index: 1;
+    /* z-index: 1; */
     height: auto;
 }
 
 #card1{
   display:flex;
-  flex-wrap: wrap;
   flex-direction: column;
   margin: 10px;
   padding: 10px;
@@ -97,12 +96,11 @@ body{
   justify-content: flex-start;
   background-color: #0054A4;
   overflow: hidden;
-  height: fit-content;
+  height: 650px;
 }
 
 #card2{
   display:flex;
-  flex-wrap: wrap;
   flex-direction: column;
   margin: 10px; 
   padding: 10px;
@@ -110,12 +108,11 @@ body{
   justify-content: flex-start;
   background-color: #0054A4;
   overflow: hidden;
-  height: fit-content; 
+  height: 650px; 
 }
 
 #card3{
   display:flex;
-  flex-wrap: wrap;
   flex-direction: column;
   margin: 10px;
   padding: 10px;
@@ -123,7 +120,7 @@ body{
   justify-content: flex-start;
   background-color: #0054A4;
   overflow: hidden;
-  height: fit-content;  
+  height: 650px;
 }
 
 .card .card-title {
